@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Lemon - Reservation</title>
+  <link rel="stylesheet" href="reserve.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="Asset 16@4x.png" alt="Little Lemon Logo" width="280" height="80"> 
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="little_lemon.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reserve.html" class="active">Reservation</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Book Your Table at Little Lemon</h1>
+      <p>Enjoy a cozy dining experience with your loved ones — fresh flavors, warm ambiance, and a touch of lemony magic await you!</p>
+    </div>
+  </section>
+
+  <!-- Main Reservation Section -->
+  <main>
+    <section class="reservation-container">
+      
+      <!-- Reservation Form -->
+      <div class="reservation-card">
+        <h1>Reservation Details</h1>
+        <form class="reservation-form">
+          <!-- Name -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+          </div>
+
+          <!-- Date -->
+          <div class="form-group">
+            <label for="date">Reservation Date</label>
+            <input type="date" id="date" required>
+          </div>
+
+          <!-- Seats -->
+          <div class="form-group">
+            <label>Number of Seats</label>
+            <div class="radio-group">
+              <label><input type="radio" name="seats" value="2" required> 2</label>
+              <label><input type="radio" name="seats" value="4"> 4</label>
+              <label><input type="radio" name="seats" value="6"> 6</label>
+              <label><input type="radio" name="seats" value="10"> 10</label>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn">Book Now</button>
+        </form>
+      </div>
+
+      <!-- Image beside form -->
+      <div class="reservation-image">
+        <img src="https://plus.unsplash.com/premium_photo-1724707432163-ff441db73077?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant Table Setup">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">
+      <img src="Asset 20@4x.png" alt="Little Lemon Small Logo" height="65" width="40">
+    </div>
+    <p>&copy; 2024 Little Lemon Restaurant | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

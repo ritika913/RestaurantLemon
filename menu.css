@@ -1,0 +1,145 @@
+/* General Body */
+body {
+    background-color: rgb(228, 228, 228);
+    font-family: 'Markazi Text', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header img {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Navigation */
+nav {
+    background-color: rgb(58, 74, 63);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5% 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f9d342;
+}
+
+/* Hero Section */
+.hero {
+    background: url("spat.jpg") center/cover no-repeat;
+    border-radius: 25px;
+    padding: 50px 20px;
+    margin: 20px 5%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Menu Sections */
+.menu-section {
+    background: rgb(231, 210, 188);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px 5%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.menu-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin: 15px auto;
+    display: block;
+}
+
+/* Menu List with Prices */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 500px;
+    font-size: 1.2rem;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: bold;
+    color: #3a4a3f;
+}
+
+/* Footer */
+footer {
+    background: #3a4a3f;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
